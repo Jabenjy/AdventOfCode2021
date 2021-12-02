@@ -1,1 +1,1 @@
-console.log(require('fs').readFileSync('i','utf8').split(/\n/).map(Number).filter((a,b,c)=>a<c[++b]).length)
+console.log(require('fs').readFileSync('i','utf8').split(/\n/).filter((a,b,c)=>-(-a)<-(-c[++b])).length)
